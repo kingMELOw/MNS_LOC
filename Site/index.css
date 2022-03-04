@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
+
+@font-face{
+    src: url('../perso/font/Dongle-Regular.ttf');
+    font-family: 'Dongle', cursive
+}
+
+.body {
+    background-color: #041937; 
+    font-size: 20px;
+    font-family: 'Dongle', cursive;
+}
+
+img{
+
+    position: absolute;
+    width: 254.88px;
+    height: 71.59px;
+    left: 40px;
+    top: 32px;
+}
+
+#navbar{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Dongle', cursive;
+
+}
+
+img{
+
+position: absolute;
+width: 254.88px;
+height: 71.59px;
+left: 40px;
+top: 32px;
+}
+
+
