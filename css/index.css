@@ -5,9 +5,6 @@
     font-family: 'Dongle', cursive
 }
 
-/* body{
-    padding: 20px;
-} */
 
 /* Conception de la grille */
 #conteneur {
@@ -28,23 +25,26 @@
 article {
     display: grid;
     flex-direction: column;
+    margin: 10px;
 }
 .texte {
     flex: 1;
 }
 /* Mise en forme */
-#conteneur > article {
-    border: 1px solid #041937;
-    box-shadow: 2px 2px 6px 0px  #ff5b31;
-    justify-content: center;
+#conteneur > article, img {
+    border: 1px solid #ff5b31;
+    box-shadow: 2px 2px 6px 2px  #ff5b31;
+    text-align: center;
+    /* justify-content: center; */
 }
 #conteneur > article img {
-    max-width: 40%;
-
+    max-width: 50%;
+    
 }
 .texte {
     padding: 0 20px 20px;
     color: #ff5b31;
+
 }
 button {
     background: #041937;
@@ -52,6 +52,7 @@ button {
     color: #ff5b31;
     padding: 5px;
 }
+
 
 
 
