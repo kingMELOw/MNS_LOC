@@ -1,7 +1,8 @@
-#body{
+#body {
     background-color: #041937;
 }
-#test{
+
+#test {
     text-align: center;
     font-family: serif;
     color: #ff5b31;
@@ -13,13 +14,13 @@
     border-radius: 30px;
 }
 
-#text{
+#text {
     text-align: center;
     color: #ff5b31;
     letter-spacing: 3px;
 }
 
-#text2{
+#text2 {
     margin-top: 10%;
     text-align: center;
     font-family: Arial;
@@ -29,12 +30,12 @@
     text-shadow: 5px 3px 20px #ff5b31;
 }
 
-#b1{
+#b1 {
     text-align: center;
     font-weight: bold;
 }
 
-#ttt{
+#ttt {
     color: #ff5b31;
     text-align: center;
     padding: 5px;
@@ -43,9 +44,10 @@
     border-radius: 30px;
 }
 
-#all{
+#all {
     padding: 5px;
     border: 5px solid #ff5b31;
     font-family: serif;
     border-radius: 30px;
+
 }
