@@ -13,25 +13,25 @@ function printTime() {
     var year = d.getFullYear();
 
     switch (day) {
-        case 0:
+        case 1:
             day = "Lundi";
             break
-        case 1:
+        case 2:
             day = "Mardi";
             break
-        case 2:
+        case 3:
             day = "Mercredi";
             break
-        case 3:
+        case 4:
             day = "Jeudi";
             break
-        case 4:
+        case 5:
             day = "Vendredi";
             break
-        case 5:
+        case 6:
             day = "Samedi";
             break
-        case 6:
+        case 7:
             day = "Dimanche";
             break
 
