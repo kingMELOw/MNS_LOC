@@ -29,7 +29,7 @@
   <div id="test">Loading</div>
   <div id="ttt"></div>
 </form>
-<p id="text">Par Maxime JEAN et Félix SCARON</p>
+<p id="text">Par JEAN Maxime et SCARON Félix</p>
 
 <body>
   <!-- Mise en place du Menu et logo -->
