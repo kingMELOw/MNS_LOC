@@ -9,19 +9,19 @@
     <body>
         <form method="POST" action="target.php">
             <p>
-                <label for="nom">Entrez votre prénom</label>
-                <input type="text" name="nom" id="nom"
+                <label for="nom">Entrez votre nom</label>
+                <input type="text" name="nom" id="nom"/>
             </p>
             <p>
                 <label for="prénom">Entrez votre prénom</label>
-                <input type="text" name="prénom" id="prénom"
+                <input type="text" name="prénom" id="prénom"/>
             </p>
             <p>
                 <label for="email">Entrez votre email</label>
-                <input type="text" name="email" id="email"
+                <input type="text" name="email" id="email"/>
             </p>
             <p>
-                <input type="submit" value="Envoyer">
+                <input type="submit" value="Envoyer" id="confirm">
             </p>
         </form>
     </body>
