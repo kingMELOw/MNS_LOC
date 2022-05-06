@@ -4,6 +4,7 @@
 <head>
     <title>Page de traitement</title>
     <meta charset="utf-8">
+    <?php include '../css/style.css.php';?>
 </head>
 
 <body>
@@ -21,7 +22,7 @@
         $nom = securisation($_POST['nom']);
         $email = securisation($_POST['email']);
 
-        echo "Bonjour " . $prenom . " " . $nom . " " . $email . " !";
+        echo "Bonjour " . $prenom . " " . $nom . " (" . $email . ") !";
     ?>
 </body>
 </html>
