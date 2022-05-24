@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de location</title>
+    <style>
+        body {
+            background-color: #041937;
+            color: #EC6834;
+            text-align: center;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 400px;
+            height: 700px;
+            border: 1px solid #EC6834;
+            background-color: #151B36;
+            padding: auto;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px #EC6834;
+            font-family: 'Dongle', cursive;
+            font-size: 1.5em;
+        }
+
+        .header-navbar {
+            background: #041937;
+        }
+
+        form {
+            max-width: 300px;
+            margin: auto;
+            padding: auto;
+        }
+
+        p>label {
+            display: block;
+        }
+
+        input[type=text],
+        input[type=email],
+        input[type=number],
+        textarea,
+
+        input:invalid {
+            box-shadow: 0 0 5px 1px red;
+        }
+
+        input:focus:invalid {
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <p>
+          <label>
+            <legend>Genre<abbr title="Ce champ est obligatoire"></abbr></legend>
+            <input type="radio" required name="title" id="r1" value="Mr"><label for="r1">M.</label>
+            <input type="radio" required name="title" id="r2" value="Ms"><label for="r2">Mme.</label>
+          </label>
+        </p>
+        <p>
+          <label for="n1">Quel est votre Nom?</label>
+          <!-- L'attribut pattern peut servir de recours pour les navigateurs dont le type number n'est
+                         pas implémenté pour input mais qui prennent en charge l'attribut pattern. Veuillez noter
+                         que les navigateurs prenant en charge l'attribut pattern ne signalent pas d'erreur quand
+                         il est utilisé avec un champ number. Seule son utilisation ici agit en tant que recours. -->
+          <!-- <input type="number" min="12" max="120" step="1" id="n1" name="age"
+                           pattern="\d+"> -->
+          <input type="text" id="utilisateur" placeholder="" maxlength="24">
+          </p>
+        <p>
+          <label for="t1">Quel matériels voulez-vous?</label>
+          <input type="text" id="t1" name="Materiels" list="l1" required
+                 pattern="[Vid]éoprojecteur|[Ordi]nateur|[Ec]crans|[Ca]squeVR|[Web]cam">
+          <datalist id="l1">
+            <option>Vidéoprojecteur</option>
+            <option>Ordinateur</option>
+            <option>Ecrans</option>
+            <option>CasqueVR</option>
+            <option>Webcam</option>
+          </datalist>
+        </p>
+        <p>
+          <label for="t2">Quelle est votre email?</label>
+          <input type="email" id="t2" name="email">
+        </p>
+        <p>
+          <label for="t3">Laissez un commentaire</label>
+          <textarea id="t3" name="msg" maxlength="140" rows="5"></textarea>
+        </p>
+        <p>
+          <button>Soumettre</button>
+        </p>
+      </form>
+</body>
+</html>
