@@ -23,7 +23,7 @@ if(isset($_POST['submit']))
 
     if(!$login) // $email == null
     {
-        header('Location: /formulaire.php?email_error');
+        header('Location: /formulaire.co.php?email_error');
         exit;
     } 
 
@@ -32,7 +32,7 @@ if(isset($_POST['submit']))
 
     if(!$password) // $password == null
     {
-        header('Location: /formulaire.php?password_error');
+        header('Location: /formulaire.co.php?password_error');
         exit;
     } 
 
@@ -51,14 +51,14 @@ if(isset($_POST['submit']))
     // 4. On vérifie l'existance de l'utilisateur
     if(!$user) // $user == null
     {
-        header('Location: /formulaire.php?account_error');
+        header('Location: /formulaire.co.php?account_error');
         exit;
     } 
 
     // 5. Vérification du mot de passe
     if(!password_verify($password, $user['mdp'])) // anciennement $user['password'] != $password
     {
-        header('Location: /formulaire.php?password_error');
+        header('Location: /formulaire.co.php?password_error');
         exit;
     }
 
@@ -81,6 +81,6 @@ if(isset($_POST['submit']))
 }
 else
 {
-    header('Location: formulaire.php');
+    header('Location: formulaire.co.php');
     exit;
 }
