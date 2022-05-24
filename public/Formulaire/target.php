@@ -18,17 +18,17 @@ if(isset($_POST['submit']))
 
     // Vérification des champs obligatoires
 
-    // 1. On vérifie d'abord l'email
-    $email = !empty($_POST['email']) ? $_POST['email'] : null;
+    // 1. On vérifie d'abord le Login
+    $login = !empty($_POST['Login']) ? $_POST['Login'] : null;
 
-    if(!$email) // $email == null
+    if(!$login) // $email == null
     {
         header('Location: /formulaire.php?email_error');
         exit;
     } 
 
     // 2. Ensuite on vérifie le mot de passe
-    $password = !empty($_POST['password']) ? $_POST['password'] : null;
+    $password = !empty($_POST['mdp']) ? $_POST['mdp'] : null;
 
     if(!$password) // $password == null
     {
@@ -40,7 +40,7 @@ if(isset($_POST['submit']))
     require 'includes/dbConnect.php';
 
     // Récupération de l'utilisateur depuis la base de données à partir de son email
-    $sql = "SELECT * FROM user WHERE email = '" . $email . "'";
+    $sql = "SELECT * FROM user WHERE user_login = '" . $login . "'";
     $req = $pdo->query($sql);
     $user = $req->fetch(PDO::FETCH_ASSOC);
 
@@ -56,7 +56,7 @@ if(isset($_POST['submit']))
     } 
 
     // 5. Vérification du mot de passe
-    if(!password_verify($password, $user['password'])) // anciennement $user['password'] != $password
+    if(!password_verify($password, $user['mdp'])) // anciennement $user['password'] != $password
     {
         header('Location: /formulaire.php?password_error');
         exit;
@@ -64,7 +64,7 @@ if(isset($_POST['submit']))
 
     // On ouvre une session
     session_start();
-    $_SESSION['user_id'] = $user['id'];
+    $_SESSION['user_login'] = $user['id_user'];
 
     // // Si Admin
     // if($user['is_admin'] == '1')
@@ -81,6 +81,6 @@ if(isset($_POST['submit']))
 }
 else
 {
-    header('Location: /formulaire.php');
+    header('Location: formulaire.php');
     exit;
 }
