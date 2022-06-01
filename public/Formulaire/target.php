@@ -37,7 +37,7 @@ if(isset($_POST['submit']))
     } 
 
     // 3. Connexion à la base de données
-    require 'includes/dbConnect.php';
+    require '../includes/dbConnect.php';
 
     // Récupération de l'utilisateur depuis la base de données à partir de son email
     $sql = "SELECT * FROM user WHERE user_login = '" . $login . "'";
