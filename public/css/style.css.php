@@ -28,5 +28,17 @@
         background: #041937;
     }
     
+    .btnEnvoyer {
+        background: #EC6834;
+        border: 0;
+        color: #151B36;
+        padding: 5px;
+        font-size: 1.2em;
+    }
+
+    input[type=submit] {
+        color: blue;
+
+}
      
 </style>

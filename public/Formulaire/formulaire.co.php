@@ -25,5 +25,6 @@
             </tr>
         </form>
     </table>
+    <div><p>Pas inscrit ? Faites une demande <a href="../Inscription.html">d'inscription</a></p></div>
 </body>
 </html>
