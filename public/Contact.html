@@ -1,224 +1,93 @@
-<!DOCTYPE html>
-<html lang="Fr">
+<!doctype html>
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Contact</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
-body{
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Contact</title>
+  <style>
+    body {
+      background-color: #041937;
+      color: #EC6834;
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      gap:50px;
+      background-color: #151B36;
+      padding: auto;
+      margin: auto;
+      border-radius: 10px;
+      font-family: 'Dongle', cursive;
+      font-size: 1.5em;
+    }
 
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background-color: #151B36;
-}
-
-a{
-    text-decoration: none;
-    color: #EC6834;
-}
-.wrapper,
-.wrapper .img-area,
-.social-icons a,
-.buttons button{
-  background: rgba(0, 0, 0, 0);
-  box-shadow: -3px -3px 7px #EC6834,
-               3px 3px 5px #EC6834;
-}
-.wrapper{
-  position: relative;
-  width: 350px;
-  padding: 30px;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-.wrapper .icon{
-  font-size: 17px;
-  color: #EC6834;
-  position: absolute;
-  cursor: pointer;
-  opacity: 0.7;
-  top: 15px;
-  height: 35px;
-  width: 35px;
-  text-align: center;
-  line-height: 35px;
-  border-radius: 50%;
-  font-size: 16px;
-}
-.wrapper .icon i{
-  position: relative;
-  z-index: 9;
-}
-.wrapper .icon.arrow{
-  left: 15px;
-}
-.wrapper .icon.dots{
-  right: 15px;
-}
-.wrapper .img-area{
-  height: 150px;
-  width: 150px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.img-area .inner-area{
-  height: calc(100% - 25px);
-  width: calc(100% - 25px);
-  border-radius: 50%;
-}
-.inner-area img{
-  height: 95%;
-  width: 100%;
-  border-radius: 50%;
-  align-items: center;
-}
-.wrapper .name{
-  font-size: 23px;
-  font-weight: 500;
-  color: #EC6834;
-  margin: 10px 0 5px 0;
-}
-.wrapper .about{
-  color: #EC6834;
-  font-weight: 400;
-  font-size: 16px;
-}
-.wrapper .social-icons{
-  margin: 15px 0 25px 0;
-}
-.social-icons a{
-  position: relative;
-  height: 40px;
-  width: 40px;
-  margin: 0 5px;
-  display: inline-flex;
-  text-decoration: none;
-  border-radius: 50%;
-}
-.social-icons a:hover::before,
-.wrapper .icon:hover::before,
-.buttons button:hover:before{
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  border-radius: 50%;
-  box-shadow: inset -3px -3px 7px #EC6834,
-              inset 3px 3px 5px #EC6834;
-}
-.buttons button:hover:before{
-  z-index: -1;
-  border-radius: 5px;
-}
-.social-icons a i{
-  position: relative;
-  z-index: 3;
-  text-align: center;
-  width: 100%;
-  height: 100%;
-  line-height: 40px;
-}
-.social-icons a.fb i{
-  color: #EC6834;
-}
-.social-icons a.twitter i{
-  color: #EC6834;
-}
-.social-icons a.insta i{
-  color: #EC6834;
-}
-
-.wrapper .buttons{
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-}
-.buttons button{
-  position: relative;
-  width: 100%;
-  border: none;
-  outline: none;
-  padding: 12px 0;
-  color: #EC6834;
-  font-size: 17px;
-  font-weight: 400;
-  border-radius: 5px;
-  cursor: pointer;
-  z-index: 4;
-}
-.buttons button:first-child{
-  margin-right: 10px;
-}
-.buttons button:last-child{
-  margin-left: 10px;
-}
-    </style>
+    div.card {
+      background-color: #041937;
+      border: 1px solid #EC6834;
+      box-shadow: #EC6834;
+      display: flex;
+      margin-top: 110px;
+      padding: 150px;
+      height: 300px;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
 </head>
+
 <body>
-  <div class="wrapper">
-    <div class="img-area">
-      <div class="inner-area">
-        <img src="./image/logo-mns-02.png" alt="">
-      </div>
-    </div>
-    <div> <a href="./index.html" class="icon arrow"><i class="fas fa-arrow-left"></i></a></div>
-    <div class="icon dots"><i class="fas fa-ellipsis-v"></i></div>
-    <div class="name">#</div>
-    <div class="about">#</div>
 
-    <!-- #############################Création d'icon#################################### -->
-    <div class="social-icons">
-      <a href="indeed" class="Indeed"><i class="fab fa-invision"></i></a>
-      <a href="twitter" class="twitter"><i class="fab fa-twitter"></i></a>
-      <!-- <a href="#" class="yt"><i class="fab fa-youtube"></i></a> -->
+  <!-- Example Code -->
 
-    <!-- #############################Création Bouton + lien directive#################################### -->
-    </div>
-    <div class="buttons">
-      <button><a href="https://www.linkedin.com/school/metz-numeric-school/mycompany/" class="Linkedin"><i class="fab fa-linkedin"></i></a></button>
-      <button><a href="https://www.metz-numeric-school.fr/fr">Site internet</a></button>
+  <div class="card">
+    <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="" role="img"
+        aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"> -->
+    <title>Contact</title>
+    <img src="./image/logo-mns-02.png" class="card-img-top" alt="...">
+    <!-- <rect width="100%" height="100%" fill="#EC6834"></rect><text x="50%" y="50%" fill="#EC6834"
+      dy=".3em">Intervenant</text>
+    </svg> -->
+
+    <div >
+      <h5 class="card-title">Contacter</h5>
+      <p class="card-text">Adresse mail</p>
+      <p class="card-text">Telephone</p>
+      <a href="#" class="btn btn-primary">Me Contacter</a>
     </div>
   </div>
-  <div class="wrapper">
-    <div class="img-area">
-      <div class="inner-area">
-        <img src="./image/logo-mns-02.png" alt="">
-      </div>
-    </div>
-    <div> <a href="./index.html" class="icon arrow"><i class="fas fa-arrow-left"></i></a></div>
-    <div class="icon dots"><i class="fas fa-ellipsis-v"></i></div>
-    <div class="name">#</div>
-    <div class="about">#</div>
 
-    <!-- #############################Création d'icon#################################### -->
-    <div class="social-icons">
-      <a href="indeed" class="Indeed"><i class="fab fa-invision"></i></a>
-      <a href="twitter" class="twitter"><i class="fab fa-twitter"></i></a>
-      <!-- <a href="#" class="yt"><i class="fab fa-youtube"></i></a> -->
+  <!-- End Example Code -->
 
-    <!-- #############################Création Bouton + lien directive#################################### -->
-    </div>
-    <div class="buttons">
-      <button><a href="https://www.linkedin.com/school/metz-numeric-school/mycompany/" class="Linkedin"><i class="fab fa-linkedin"></i></a></button>
-      <button><a href="https://www.metz-numeric-school.fr/fr">Site internet</a></button>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script> -->
+
+  <!-- Example Code -->
+
+
+  <div class="card">
+    <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="" role="img"
+          aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"> -->
+    <img src="./image/logo-mns-02.png" class="card-img-top" alt="...">
+    <!-- <rect width="100%" height="100%" fill="#EC6834"></rect><text x="50%" y="50%" fill="#EC6834"
+      dy=".3em">Intervenant</text>
+    </svg> -->
+
+    <div class="">
+      <h5 class="card-title">Contacter</h5>
+      <p class="card-text">Adresse mail</p>
+      <p class="card-text">Telephone</p>
+      <a href="#" class="btn btn-primary">Me Contacter</a>
     </div>
   </div>
+
+  <!-- End Example Code -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
+</html>
+</body>
+
 </html>
