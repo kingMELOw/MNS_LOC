@@ -13,7 +13,7 @@
     }
 
     * {
-        margin: 0;
+        margin: 0 1rem 0 0.2rem;
         padding: 0;
         box-sizing: border-box;
         font-family: 'Poppins', sans-serif;
@@ -21,24 +21,25 @@
 
     table {
         border: 2px solid rgb(255, 72, 0);
-        width: 100%;
+        width: 70%;
+        box-shadow: 0px 0px 10px #EC6834;
     }
 
     .header-navbar {
         background: #041937;
     }
     
-    .btnEnvoyer {
-        background: #EC6834;
-        border: 0;
-        color: #151B36;
-        padding: 5px;
-        font-size: 1.2em;
-    }
-
     input[type=submit] {
         color: #041937;
         background-color: #EC6834;
+        align-content: center;
+        display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0.3rem;
+                margin: 0.9rem 0 0 5.5rem;
+                border-radius: 10px;
+                box-shadow: 0px 0px 10px #EC6834;
     }
      
 </style>

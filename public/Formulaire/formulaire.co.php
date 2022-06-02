@@ -8,10 +8,11 @@
 </head>
 
 <body>
-    <h1>Connexion</h1>
+    <h1>Bienvenue sur MNS LOC</h1>
+    <h2>Veuillez vous connecter</h2>
     <br>
-    <table>
-        <form method="POST" action="target.php">
+    <form method="POST" action="target.php">
+        <table>
             <tr>
                 <td><label for="Login">Login</label></td>
                 <td><input type="text" name="Login" id="Login" /></td>
@@ -20,11 +21,11 @@
                 <td><label for="mdp">Password</label></td>
                 <td><input type="password" name="mdp" id="mdp" />
             </tr>
-            <tr>
-                <td><input type="submit" value="Connexion" id="btnEnvoyer"></td>
-            </tr>
-        </form>
-    </table>
+        </table>
+        <div id="test">
+            <input type="submit" value="Connexion" id="btnEnvoyer">
+        </div>
+    </form>
     <div><p>Pas inscrit ? Faites une demande <a href="../Inscription.html">d'inscription</a></p></div>
 </body>
 </html>
