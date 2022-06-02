@@ -3,160 +3,117 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../public/css/formu.css">
-    <link rel="stylesheet" href="../public/js/app.js">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>INSCRIPTION</title>
     <style>
         body {
-    background-color: #041937;
-    color: #EC6834;
-    text-align: center;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 400px;
-    height: 710px;
-    border: 1px solid #EC6834;
-    background-color: #151B36;
-    padding: auto;
-    margin: auto;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px #EC6834;
-    font-family: 'Dongle', cursive;
-    font-size: 1em;
-}
-/* .box-login {
-    flex-shrink: 0;
-    background: #fff;
-    border-radius: 5px;
-} */
-h2 {
-    text-align: center;
-}
-.form-groupe {
-    position: relative;
-}
-label {
-    margin: 5px 23px;
-    font-size: 20px;
-    padding: 10px 0 5px 0;
-    display: block;
-    position: relative;
-}
-input {
-    display: block;
-    margin: 10px 20px 20px 20px;
-    outline: 0;
-    background: rgb(226,226,226);
-    width: 330px;
-    border: 0;
-    padding: 10px 12px;
-    border-radius: 3px;
-    font-size: 22px;
-    border: 1px solid rgba(0,0,0,0.3);
-}
+            background-color: #041937;
+        }
 
-.icone-verif {
-    width: 30px;
-    position: absolute;
-    right: 27px;
-    top: 57px;
-    display: none;
-}
-.message-alerte {
-    margin: 0px 23px;
-    color: crimson;
-    display: none;
-}
-button {
-    display: block;
-    margin: 30px auto;
-    outline: 0;
-    background: #EC6834;
-    width: 90%;
-    border: 0;
-    padding: 15px;
-    border-radius: 3px;
-    font-size: 20px;
-    cursor: pointer;
-}
-button:hover {
-    background: rgb(252,181,49);
-}
-button:active {
-    background: rgb(250,165,9);
-}
-.ligne {
-    width: 80%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 0 auto;
-}
-.l1, .l2, .l3 {
-    width: 30%;
-    height: 5px;
-    margin: 15px 5px 20px;
-    position: relative;
-    display: none;
-}
-.l1 {
-    background: rgb(182,182,13);
-}
-.l2 {
-    background: rgb(232, 22, 22);
-}
-.l3 {
-    background: green;
-}
-.ligne span {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 10px;
-}
+        .modal-body {
+            background-color: #041937;
+            color: #EC6834;
+        }
+
+        .modal-content {
+            background-color: #041937;
+            color: #EC6834;
+            justify-content: center;
+        }
+
+        h1 {
+            color: #EC6834;
+        }
+
+        #button1 {
+            background-color: #EC6834;
+            color: #041937;
+            position: relative;
+            left: 70%;
+        }
+
+        #button2 {
+            background-color: #EC6834;
+            color: #041937;
+        }
     </style>
-
 </head>
 
-<div class="box-login">
+<body>
+  
 
-    <h2>Inscrivez-vous</h2>
+            <div class="container my-3">
+                <h1 class="text-center">INSCRIPTION </h1>
+                <button type="button" class="btn btn-dark my-3" id="button1" data-bs-toggle="modal"
+                    data-bs-target="#completeModal">
+                    S'inscrire
+                </button>
+                <div id="displayDataTable">
+                    <div class="modal fade" id="completeModal" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
 
-    <form>
-        <div class="form-groupe">
-            <label for="utilisateur">Votre Nom</label>
-            <input type="text" id="utilisateur" placeholder="Firstname" maxlength="24">
-            <img src="ressources/check.svg" alt="icone de validation" class="icone-verif">
-            <!-- <span class="message-alerte">Choisissez un pseudo entre 3 et 24 caractères</span> -->
-        </div>
-        <div class="form-groupe">
-            <label for="email">Votre Email</label>
-            <input type="email" id="email" placeholder="Votre email">
-            <img src="ressources/check.svg" alt="icone de validation" class="icone-verif">
-            <span class="message-alerte">Rentrez un email valide.</span>
-        </div>
-        <div class="form-groupe">
-            <label for="mdp">Password</label>
-            <input type="password" id="mdp" placeholder="Password">
-            <img src="ressources/check.svg" alt="icone de validation" class="icone-verif">
-            <!-- <span class="message-alerte">Un symbole, une lettre minuscule, un chiffre.</span>
-            <div class="ligne">
-                <br>
-                <div class="l1"><span>faible</span></div>
-                <div class="l2"><span>moyen</span></div>
-                <div class="l3"><span>fort</span></div>
-            </div> -->
-            <br>
-        </div>
-        <div class="form-groupe">
-            <label for="mdpconf">Confirme Password</label>
-            <input type="password" id="mdpconf" placeholder="Confirme">
-            <img src="ressources/check.svg" alt="icone de validation" class="icone-verif">
-        </div>
 
-        <button type="submit">Création du compte</button>
-    </form>
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">INSCRIPTION</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="form-group">
+                                        <label for="completenom">Nom</label>
+                                        <input type="text" class="form-control" id="completenom"
+                                            placeholder="Entrer votre nom">
+                                    </div>
+                                    
+                                        <div class="form-group">
+                                            <label for="completeprenom">Prénom</label>
+                                            <input type="text" class="form-control" id="completeprenom"
+                                                placeholder="Entrer votre prenom">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="completemail">Email</label>
+                                            <input type="email" class="form-control" id="completemail"
+                                                placeholder="Entrer votre email">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="completemailvalid">Vérification Email</label>
+                                            <input type="email" class="form-control" id="completemailvalid"
+                                                placeholder="verification de votre email">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="completemobile">Numero de telephone</label>
+                                            <input type="text" class="form-control" id="completemobile"
+                                                placeholder="Entrer votre numero de telephone">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="completemdp">Mot de passe</label>
+                                            <input type="password" class="form-control" id="completeplace"
+                                                placeholder="Entrer votre mot de passe">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="completemdpvalid">Vérification Mot de passe</label>
+                                            <input type="password" class="form-control" id="completemdpvalid"
+                                                placeholder="verification de votre mot de passe">
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-dark" onclick="adduser() "
+                                                id="button2">Création du compte</button>
+                                            <button type="button" class="btn btn-danger"
+                                                data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-</div>
+                            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+                                integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+                                crossorigin="anonymous"></script>
+
+</body>
+
+</html>
