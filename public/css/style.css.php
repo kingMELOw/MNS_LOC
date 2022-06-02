@@ -37,8 +37,8 @@
     }
 
     input[type=submit] {
-        color: blue;
-
-}
+        color: #041937;
+        background-color: #EC6834;
+    }
      
 </style>
