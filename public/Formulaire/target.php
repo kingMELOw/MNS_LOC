@@ -39,7 +39,7 @@ if (isset($_POST)) {
     // 3. Connexion à la base de données
     // require '../includes/dbConnect.php';
 
-    $pdo = new PDO('mysql:host=localhost;dbname=mns_loc', 'root', '');
+    $pdo = new PDO('mysql:host=localhost;dbname=LOC_MNS', 'admin', 'dev1');
 
     // Récupération de l'utilisateur depuis la base de données à partir de son email
     $sql = "SELECT * FROM login WHERE user_login ='$login' ";

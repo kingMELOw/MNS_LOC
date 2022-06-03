@@ -51,9 +51,8 @@
         <form class="d-flex">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
           <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-            <a href="./Formulaire/formulaire.co.php" class="button">Connexion</a>
             <a href="./Contact.html" class="button">Contact</a>
-            <a href="./index-1.html" class="button">Accueil</a>
+            <a href="./Formulaire/logout.php" class="button">Déconnexion</a>
             </div>
           </form>
         </div>
