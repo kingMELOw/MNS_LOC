@@ -27,5 +27,8 @@
         </div>
     </form>
     <div><p>Pas inscrit ? Faites une demande <a href="../Inscription.html">d'inscription</a></p></div>
+    <a href="../index.html">
+                    <button type="button" class="btn btn-outline-danger my-3">Retour</button>
+                </a>
 </body>
 </html>
