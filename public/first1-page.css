@@ -954,8 +954,8 @@
   .menu-btn{
     position: absolute;
     z-index: 2;
-    right: 20px;
-    /*left: 20px; */
+    /* right: 20px; */
+    left: 20px;
     top: 20px;
     height: 50px;
     width: 50px;
@@ -978,7 +978,7 @@
     top: calc(50% - 1px);
     left: 30%;
     width: 40%;
-    border-bottom: 2px solid #000;
+    border-bottom: 3px solid #000;
     transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
   }
   .menu-btn:before{
