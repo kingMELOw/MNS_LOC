@@ -7,4 +7,4 @@
 
 // Connexion à la base avec PDO
 
-$pdo = new PDO('mysql:host=localhost;dbname=mns_loc','root', '');
+$pdo = new PDO('mysql:host=localhost;dbname=LOC_MNS','admin', 'dev1');

@@ -39,7 +39,7 @@ if (isset($_POST)) {
     // 3. Connexion à la base de données
     // require '../includes/dbConnect.php';
 
-    $pdo = new PDO('mysql:host=localhost;dbname=LOC_MNS', 'admin', 'dev1');
+    $pdo = new PDO('mysql:host=localhost;dbname=mns_loc', 'root', '');
 
     // Récupération de l'utilisateur depuis la base de données à partir de son email
     $sql = "SELECT * FROM login WHERE user_login ='$login' ";
@@ -80,9 +80,9 @@ if (isset($_POST)) {
     if ($req->rowCount() > 0) {
         $data = $req->fetchAll();
         if (password_verify($mdp, $data[0]['mdp'])) {
-            $_SESSION['login'] = $data[0];
+            $_SESSION['login'] = $login;
             // echo '<script>alert("Connexion réussie !")</script>';
-            header('Location: ../index.html');
+            header('Location: ../materiel.php');
         }   else {
             header('Location: error.php');
             // echo '<script>alert("Mot de passe incorrect")</script>';

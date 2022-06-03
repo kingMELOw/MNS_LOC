@@ -1,3 +1,5 @@
+<?php session_start();?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -57,6 +59,12 @@
         </div>
       </div>
     </nav>
+    <br><br>
+    <?php if (isset($_SESSION['login']))
+    {
+      echo '<center><h2>Bonjour '.$_SESSION['login'].'</h2></center>';
+    } 
+    ?>
     <br><br>
     
     <!-- Mise en place des images est texte -->
