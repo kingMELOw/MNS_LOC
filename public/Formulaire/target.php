@@ -1,28 +1,25 @@
 <?php
-        function securisation($donnees){
-            $donnees = trim($donnees); // Supprime les espaces (ou d'autres caractères) en début et fin de chaîne
-            $donnees = stripslashes($donnees); // Supprime les antislashs dans les données
-            $donnees = htmlspecialchars($donnees); // permet de protéger les balises HTML
-            return $donnees;
-        }
+session_start();
 
+function securisation($donnees)
+{
+    $donnees = trim($donnees); // Supprime les espaces (ou d'autres caractères) en début et fin de chaîne
+    $donnees = stripslashes($donnees); // Supprime les antislashs dans les données
+    $donnees = htmlspecialchars($donnees); // permet de protéger les balises HTML
+    return $donnees;
+}
+var_dump($_POST);
 
-
-        // echo "Bonjour " . $email . " nous avons désormais votre mot de passe qui est '" . $mdp . "' , il va être partager tout de suite sur le net !";
-    
 
 // Vérification de l'envoi du formulaire
-if(isset($_POST['submit']))
-{
-    session_start();
-
-    $Login = securisation($_POST['Login']);
+if (isset($_POST)) {
+    $login = securisation($_POST['login']);
     $mdp = securisation($_POST['mdp']);
 
     // Vérification des champs obligatoires
 
-    // 1. On vérifie d'abord le Login
-    // $login = !empty($_POST['Login']) ? $_POST['Login'] : null;
+    // 1. On vérifie d'abord le login
+    // $login = !empty($_POST['login']) ? $_POST['login'] : null;
 
     // if(!$login) // $email == null
     // {
@@ -40,7 +37,9 @@ if(isset($_POST['submit']))
     // } 
 
     // 3. Connexion à la base de données
-    require '../includes/dbConnect.php';
+    // require '../includes/dbConnect.php';
+
+    $pdo = new PDO('mysql:host=localhost;dbname=LOC_MNS', 'admin', 'dev1');
 
     // Récupération de l'utilisateur depuis la base de données à partir de son email
     $sql = "SELECT * FROM login WHERE user_login ='$login' ";
@@ -78,22 +77,34 @@ if(isset($_POST['submit']))
     // {
     //     header('Location: /');
     // }
-    if($req->rowCount() > 0)
-    {
-        $data = $result->fetchAll();
-        if (password_verify($mdp, $data[0]["password"]))
-        {
-            echo "Connexion effectuée";
-            $_SESSION['user_login'] = $user['id_user'];
+    if ($req->rowCount() > 0) {
+        $data = $req->fetchAll();
+        if (password_verify($mdp, $data[0]['mdp'])) {
+            $_SESSION['login'] = $login;
+            // echo '<script>alert("Connexion réussie !")</script>';
+            header('Location: ../materiel.php');
+        }   else {
+            header('Location: error.php');
+            // echo '<script>alert("Mot de passe incorrect")</script>';
+            // var_dump(password_verify($mdp, $data[0]['mdp']));
+            // $pass = password_hash($mdp, PASSWORD_DEFAULT);
+            // $req = "INSERT INTO login (user_login, mdp) VALUES ('$login', '$pass')";
+            // $req = $pdo->prepare($req);
+            // $req->execute();
+            // echo "insertion réussie";
+            // var_dump($req);
         }
-    }
-    else
-    {
-        // header('Location: formulaire.co.php');
-        // exit;
+     } 
+        else {
+            header('Location: error.php');
+            // var_dump($data); 
+            // $pass = password_hash($mdp, PASSWORD_DEFAULT);
+            // $req = "INSERT INTO login (user_login, mdp) VALUES ('$login', '$pass')";
+            // $req = $pdo->prepare($req);
+            // $req->execute();
+            // echo "insertion réussie";
+        }
+    }else {
         header('Location: error.php');
+    
     }
-
-}
-
-

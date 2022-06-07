@@ -1,3 +1,5 @@
+<?php session_start();?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -49,7 +51,6 @@
         <form class="d-flex">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
           <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-            <a href="./Formulaire/formulaire.co.php" class="button">Connexion</a>
             <a href="./Contact.html" class="button">Contact</a>
             <a href="./index.html" class="button">Accueil</a>
             </div>
@@ -57,6 +58,12 @@
         </div>
       </div>
     </nav>
+    <br><br>
+    <?php if (isset($_SESSION['login']))
+    {
+      echo '<center><h2>Bonjour '.$_SESSION['login'].'</h2></center>';
+    } 
+    ?>
     <br><br>
     
     <!-- Mise en place des images est texte -->
