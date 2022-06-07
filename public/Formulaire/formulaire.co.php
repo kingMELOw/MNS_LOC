@@ -4,26 +4,33 @@
 <head>
     <title>Connexion MNS-LOC</title>
     <meta charset="utf-8">
-    <?php include '../css/style.css.php'; ?>
+    <?php include 'style.css.php'; ?>
 </head>
 
 <body>
-    <h1>Connexion</h1>
+    <h1>Bienvenue sur MNS LOC</h1>
+    <h2>Veuillez vous connecter</h2>
     <br>
-    <table>
-        <form method="POST" action="target.php">
+    <form method="POST" action="target.php">
+        <table>
             <tr>
-                <td><label for="Login">Login</label></td>
-                <td><input type="text" name="Login" id="Login" /></td>
+                <div data-validate="Ce champ est obligatoire">
+                    <td><label for="login">Login</label></td>
+                    <td><input type="text" name="login" placeholder="Nom d'utilisateur"/></td>
+                </div>
             </tr>
             <tr>
-                <td><label for="mdp">Password</label></td>
-                <td><input type="password" name="mdp" id="mdp" />
+                <div data-validate="Ce champ est obligatoire">
+                    <td><label for="mdp">Password</label></td>
+                    <td><input type="password" name="mdp" placeholder="Mot de passe"/>
+                </div>
             </tr>
-            <tr>
-                <td><input type="submit" value="Connexion" id="btnEnvoyer"></td>
-            </tr>
-        </form>
-    </table>
+        </table>
+            <input type="submit" value="Connexion" id="btnEnvoyer">
+    </form>
+    <div><p>Pas inscrit ? Faites une demande <a href="../Inscription.html">d'inscription</a></p></div>
+    <a href="../index.html">
+                    <button type="button" class="btn btn-outline-danger my-3">Retour</button>
+                </a>
 </body>
 </html>
