@@ -26,8 +26,8 @@ if (isset($_POST)) {
     // 3. Connexion à la base de données
     // require '../includes/dbConnect.php';
 
-    // $pdo = new PDO('mysql:host=localhost;dbname=LOC_MNS', 'admin', 'dev1');
-    $pdo = new PDO('mysql:host=localhost;dbname=mns_loc','root','');
+    $pdo = new PDO('mysql:host=localhost;dbname=LOC_MNS', 'admin', 'dev1');
+    // $pdo = new PDO('mysql:host=localhost;dbname=mns_loc','root','');
     var_dump($pdo);
 
                // $pass = password_hash($mdp, PASSWORD_DEFAULT);
