@@ -1,4 +1,5 @@
 <?php session_start();
+
 if (!isset($_SESSION['login']))
 {
     header("Location: Formulaire/formulaire.co.php");
@@ -32,11 +33,6 @@ if (!isset($_SESSION['login']))
     }
   </style>
 </head>
-<form id="all">
-  <div id="test">Loading</div>
-  <div id="ttt"></div>
-</form>
-
 <body>
   <!-- Mise en place du Menu et logo -->
   <header>
@@ -86,7 +82,7 @@ if (!isset($_SESSION['login']))
           <!-- <p>Collaboratively administrate empowered markets via plug-and-play networks.</p> -->
         </div>                
         <button type="button" class="btn btn-outline-info">Fiche technique</button>
-        <button onclick="location.href = '../PageLocation.html';">Demande d'emprunt</button>
+        <button onclick="location.href = '../PageLocation.php';">Demande d'emprunt</button>
       </article>
       <article>
         <img src="./image/Ordinateur.jpg" alt="MNS">
@@ -96,7 +92,7 @@ if (!isset($_SESSION['login']))
             idea-sharing.</p> -->
           </div>
           <button type="button" class="btn btn-outline-info">Fiche technique</button>
-          <button onclick="location.href = '../PageLocation.html';">Demande d'emprunt</button>
+          <button onclick="location.href = '../PageLocation.php';">Demande d'emprunt</button>
         </article>
         <article>
           <img src="./image/Ecrans.jpg" alt="MNS">
@@ -106,7 +102,7 @@ if (!isset($_SESSION['login']))
               sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p> -->
             </div>
             <button type="button" class="btn btn-outline-warning">Fiche technique</button>
-            <button onclick="location.href = '../PageLocation.html';">Demande d'emprunt</button>
+            <button onclick="location.href = '../PageLocation.php';">Demande d'emprunt</button>
           </article>
           <article>
             <img src="./image/CasqueVR.jpg" alt="MNS">
@@ -116,7 +112,7 @@ if (!isset($_SESSION['login']))
                 est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p> -->
               </div>
               <button type="button" class="btn btn-outline-info">Fiche technique</button>
-              <button onclick="location.href = '../PageLocation.html';">Demande d'emprunt</button>
+              <button onclick="location.href = '../PageLocation.php';">Demande d'emprunt</button>
             </article>
             <article>
               <img src="./image/webcam.png" alt="MNS">
@@ -127,7 +123,7 @@ if (!isset($_SESSION['login']))
                 </div>
                 
                 <button type="button" class="btn btn-outline-info">Fiche technique</button>
-                <button onclick="location.href = '../PageLocation.html';">Demande d'emprunt</button>
+                <button onclick="location.href = '../PageLocation.php';">Demande d'emprunt</button>
               </article>
             </div>
             <p id="text">Par JEAN Maxime, SCARON Félix et VILLENEUVE Alexis</p>
