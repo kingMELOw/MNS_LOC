@@ -1,10 +1,17 @@
+<?php session_start();
+if (!isset($_SESSION['login']))
+{
+    header("Location: formulaire.co.php");
+    die();
+}?>
+
 <!DOCTYPE html>
 <html>
 
 <head>
     <title>Création d'utilisateur</title>
     <meta charset="utf-8">
-    <?php include '../css/style.css.php'; ?>
+    <?php include 'style.css.php'; ?>
 </head>
 
 <body>

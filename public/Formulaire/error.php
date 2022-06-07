@@ -4,7 +4,7 @@
 <head>
     <title>ERREUR CONNEXION</title>
     <meta charset="utf-8">
-    <?php include '../css/style.css.php'; ?>
+    <?php include 'style.css.php'; ?>
 </head>
 
 <h1>Mot de passe incorrect ou compte utilisateur non existant</h1>

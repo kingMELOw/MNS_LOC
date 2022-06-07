@@ -58,6 +58,7 @@ if (!isset($_SESSION['login']))
           <div class="d-grid gap-2 d-md-flex justify-content-md-end">
             <a href="./Contact.html" class="button">Contact</a>
             <a href="./index.html" class="button">Accueil</a>
+            <a href="./Formulaire/formu.creation.php" class="button">Creation de compte (Temporaire)</a>
             </div>
           </form>
         </div>

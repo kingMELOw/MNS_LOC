@@ -1,10 +1,3 @@
-<?php session_start();
-if (!isset($_SESSION['login']))
-{
-    header("Location: Formulaire/formulaire.co.php");
-    die();
-}?>
-
 <!DOCTYPE html>
 <html>
 
