@@ -4,7 +4,7 @@
 <head>
     <title>Connexion MNS-LOC</title>
     <meta charset="utf-8">
-    <?php include '../css/style.css.php'; ?>
+    <?php include 'style.css.php'; ?>
 </head>
 
 <body>
