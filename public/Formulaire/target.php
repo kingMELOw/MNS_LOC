@@ -83,7 +83,12 @@ if (isset($_POST)) {
         if (password_verify($mdp, $data[0]['mdp'])) {
             $name = $data[0]['prenom'];
             $_SESSION['login'] = $login;
-            $_SESSION['name'] = $name;
+            if ($data[0]['is_admin'] == 1) {
+                $_SESSION['admin'] = true;
+            }
+            else {
+                $_SESSION['admin'] = false;
+            }
             header('Location: ../materiel.php');
         }   else {
             header('Location: error.php');

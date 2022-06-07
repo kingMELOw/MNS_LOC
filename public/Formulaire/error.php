@@ -14,3 +14,7 @@
 <form action="formulaire.co.php">
     <input type="submit" value="Redirection vers le formulaire" />
 </form>
+
+<a href="../materiel.php">
+                    <button type="button" class="btn btn-outline-danger my-3">Retour à l'accueil</button>
+</a>

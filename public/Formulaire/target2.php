@@ -10,8 +10,17 @@ function securisation($donnees)
 }
 
 
+
 // Vérification de l'envoi du formulaire
 if (isset($_POST)) {
+
+    //Radio button has been set to "true"
+    if (isset($_POST['isAdmin']) && $_POST['isAdmin'] == 'true')
+        $_POST['isAdmin'] = 1;
+
+    //Radio button has been set to "false" or a value was not selected
+    else $_POST['isAdmin'] = 0;
+
     $login = securisation($_POST['login']);
     $mdp = securisation($_POST['mdp']);
     $isAdmin = securisation($_POST['isAdmin']);
@@ -25,7 +34,10 @@ if (isset($_POST)) {
     // 3. Connexion à la base de données
     require 'dbConnect.php';
 
-    if (isset($_POST['login'], $_POST['mdp'], $_POST['isAdmin'], $_POST['surname'], $_POST['name'], $_POST['email'])) {
+    // var_dump($_POST);
+    // die;
+
+    if (isset($_POST['login'], $_POST['mdp'], $_POST['surname'], $_POST['name'], $_POST['email'])) {
         $sql = "INSERT INTO login (user_login, mdp, is_admin, nom, prenom, email) VALUES ('$login', '$pass', '$isAdmin', '$surname', '$name', '$email')";
         $req = $pdo->prepare($sql);
         $req->execute();
