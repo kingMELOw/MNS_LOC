@@ -45,16 +45,21 @@ if (!isset($_SESSION['login']))
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-            <a href="./Contact.html" class="button">Contact</a>
-            <a href="./index.html" class="button">Accueil</a>
-            <a href="../Formulaire/logout.php">Logout</a>
-            <a href="../Formulaire/formu.creation.php" class="button">Creation de compte (Temporaire)</a>
-            </div>
-          </form>
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Accueil</a>
+          </li>
+         
+               
+          <li class="nav-item">
+            <a class="nav-link" href="./Contact.html">Contact</a>
+          </li>
+        <li class="nav-item">
+            <a class="nav-link" href= "./Formulaire/logout.php">Déconnexion</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./Formulaire/formu.creation.php">Création (temporaire)</a>
+          </li>
+     
         </div>
       </div>
     </nav>
@@ -98,7 +103,7 @@ if (!isset($_SESSION['login']))
             <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Vivamus
               sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p> -->
             </div>
-            <button onclick="location.href = '../Fichetechnique/Fichetech-Ecrans.php';">Fiche technique</button>
+            <button type="button" class="btn btn-outline-info">Fiche technique</button>
             <button onclick="location.href = '../PageLocation.php';">Demande d'emprunt</button>
           </article>
           <article>
