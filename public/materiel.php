@@ -47,18 +47,16 @@ if (!isset($_SESSION['login']))
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link" href="./index.html">Accueil</a>
-          </li>
-         
-               
+          </li>     
           <li class="nav-item">
             <a class="nav-link" href="./Contact.html">Contact</a>
-          </li>
-        <li class="nav-item">
-            <a class="nav-link" href= "./Formulaire/logout.php">Déconnexion</a>
-          </li>
+          </li>       
           <li class="nav-item">
             <a class="nav-link" href="./Formulaire/formu.creation.php">Création (temporaire)</a>
           </li>
+          <li class="nav-item justify-content-end">
+            <a class="nav-link " href= "./Formulaire/logout.php">Déconnexion</a>
+          </li> 
      
         </div>
       </div>

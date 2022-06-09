@@ -110,7 +110,7 @@ if (!isset($_SESSION['login']))
         <div class="container">
             <div class="intro">
                 <h2 class="text-center">Fiche technique</h2>
-                <p class="button" style="text-align:center;"><a class="button" href="./index.html">Retour</a></p>
+                <p class="button" style="text-align:center;"><a class="button" href="../materiel.php">Retour</a></p>
             </div>
             <div class="row people">
                 <div class="col-md-6 col-lg-4 item">
