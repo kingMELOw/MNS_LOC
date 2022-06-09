@@ -12,7 +12,6 @@ if (isset($_SESSION['login'])) {
 	die();
 }
 
-
 if(isset($_REQUEST['unconfirm']))
 	{
 	$aeid=intval($_GET['unconfirm']);
@@ -37,11 +36,17 @@ if(isset($_REQUEST['unconfirm']))
 	$msg="Changes Sucessfully";
 	}
 
+if (isset($_GET['del']) && isset($_GET['name'])) {
+	$id = $_GET['del'];
+	$name = $_GET['name'];
 
+	$sql = "delete from login WHERE id_user=:id_user";
+	$query = $dbh->prepare($sql);
+	$query->bindParam(':id_user', $id, PDO::PARAM_STR);
+	$query->execute();
 
-
-
- ?>
+	$msg = "Data Deleted successfully";
+} ?>
 
 <!doctype html>
 <html lang="en" class="no-js">

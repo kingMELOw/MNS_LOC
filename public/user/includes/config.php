@@ -1,9 +1,13 @@
 <?php 
-define('DB_HOST','localhost');
-define('DB_USER','root');
-define('DB_PASS','');
-define('DB_NAME','mns_loc');
+// define('DB_HOST','localhost'); #serveur
+// define('DB_USER','root'); #utilisateur
+// define('DB_PASS',''); #mot de passe
+// define('DB_NAME','mns_loc'); #nom de la base de données
 
+define('DB_HOST','localhost'); #serveur
+define('DB_USER','admin'); #utilisateur
+define('DB_PASS','dev1'); #mot de passe
+define('DB_NAME','LOC_MNS'); #nom de la base de données
 
 try
 {

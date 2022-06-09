@@ -7,6 +7,8 @@
 			</li>
 			<li><a href="download.php"><i class="fa fa-download"></i> &nbsp;Télécharger la liste des utilisateurs</a>
 			</li>
+			<li><a href="../../Formulaire/formu.creation.php"><i class="fa fa-user"></i> &nbsp;Création d'utilisateur</a>
+			</li>
 			</ul>
 		</nav>
 
