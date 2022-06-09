@@ -93,7 +93,7 @@ if (!isset($_SESSION['login']))
           <!-- <p>Dramatically engage seamlessly visualize quality intellectual capital without superior collaboration and
             idea-sharing.</p> -->
           </div>
-          <button onclick="location.href = '../Fichetechnique/Fichetech--Ordinateur.php';"class="btn btn-outline-info">Fiche technique</button>
+          <button onclick="location.href = '../Fichetechnique/Fichetech-Ordinateur.php';"class="btn btn-outline-info">Fiche technique</button>
           <button onclick="location.href = '../PageLocation.php';"class="btn btn-outline-warning">Demande d'emprunt</button>
         </article>
         <article>
@@ -103,7 +103,7 @@ if (!isset($_SESSION['login']))
             <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Vivamus
               sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p> -->
             </div>
-            <button type="button" class="btn btn-outline-info">Fiche technique</button>
+            <button onclick="location.href = '../Fichetechnique/Fichetech-Ecrans.php';"class="btn btn-outline-info">Fiche technique</button>
             <button onclick="location.href = '../PageLocation.php';"class="btn btn-outline-warning">Demande d'emprunt</button>
           </article>
           <article>
