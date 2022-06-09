@@ -1,20 +1,11 @@
 <?php
 session_start();
 
-function securisation($donnees)
-{
-    $donnees = trim($donnees); // Supprime les espaces (ou d'autres caractères) en début et fin de chaîne
-    $donnees = stripslashes($donnees); // Supprime les antislashs dans les données
-    $donnees = htmlspecialchars($donnees); // permet de protéger les balises HTML
-    return $donnees;
-}
-var_dump($_POST);
-
 
 // Vérification de l'envoi du formulaire
 if (isset($_POST)) {
-    $login = securisation($_POST['login']);
-    $mdp = securisation($_POST['mdp']);
+    $login = ($_POST['login']);
+    $mdp = ($_POST['mdp']);
 
     // Vérification des champs obligatoires
 
