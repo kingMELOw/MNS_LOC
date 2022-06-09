@@ -125,7 +125,7 @@ if (!isset($_SESSION['login']))
 
       
                         <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-                        <a href="./index.html">
+                        <a href="./materiel.php">
                           <button type="button" class="btn btn-warning btn-lg">Retour</button>
                         </a>
                           <button type="button" class="btn btn-primary btn-lg">Valider</button>

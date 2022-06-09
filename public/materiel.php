@@ -97,7 +97,7 @@ if (!isset($_SESSION['login']))
           <button onclick="location.href = '../PageLocation.php';">Demande d'emprunt</button>
         </article>
         <article>
-          <img src="./css/image/Ecrans.jpg" alt="MNS">
+          <img src="./image/Ecrans.jpg" alt="MNS">
           <div class="texte" id="trois">
             <h3>Ecrans</h3>
             <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Vivamus
