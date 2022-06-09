@@ -47,16 +47,16 @@ if (!isset($_SESSION['login']))
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link" href="./index.html">Accueil</a>
-          </li>     
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="./Contact.html">Contact</a>
-          </li>       
+          </li>
+        <li class="nav-item">
+            <a class="nav-link" href= "./Formulaire/logout.php">Déconnexion</a>
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="./Formulaire/formu.creation.php">Création (temporaire)</a>
           </li>
-          <li class="nav-item justify-content-end">
-            <a class="nav-link " href= "./Formulaire/logout.php">Déconnexion</a>
-          </li> 
      
         </div>
       </div>
@@ -81,7 +81,7 @@ if (!isset($_SESSION['login']))
           <h3>Videoprojecteur</h3>
           <!-- <p>Collaboratively administrate empowered markets via plug-and-play networks.</p> -->
         </div>                
-        <button onclick="location.href = '../Fichetechnique/Fichetech-Videoprojecteur.php';"class="btn btn-outline-info">Fichetechnique</button>
+        <button onclick="location.href = './FicheTechnique/Fichetech-Videoprojecteur.php';"class="btn btn-outline-info">Fichetechnique</button>
         <button onclick="location.href = '../PageLocation.php';"class="btn btn-outline-warning">Demande d'emprunt</button>
       </article>
       <article>
@@ -91,17 +91,17 @@ if (!isset($_SESSION['login']))
           <!-- <p>Dramatically engage seamlessly visualize quality intellectual capital without superior collaboration and
             idea-sharing.</p> -->
           </div>
-          <button onclick="location.href = '../Fichetechnique/Fichetech-Ordinateur.php';"class="btn btn-outline-info">Fiche technique</button>
+          <button onclick="location.href = './FicheTechnique/Fichetech-Ordinateur.php';"class="btn btn-outline-info">Fiche technique</button>
           <button onclick="location.href = '../PageLocation.php';"class="btn btn-outline-warning">Demande d'emprunt</button>
         </article>
         <article>
-          <img src="./image/Ecrans.jpg" alt="MNS">
+          <img src="./css/image/Ecrans.jpg" alt="MNS">
           <div class="texte" id="trois">
             <h3>Ecrans</h3>
             <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Vivamus
               sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p> -->
             </div>
-            <button onclick="location.href = '../Fichetechnique/Fichetech-Ecrans.php';"class="btn btn-outline-info">Fiche technique</button>
+            <button onclick="location.href = './FicheTechnique/Fichetech-Ecrans.php';"class="btn btn-outline-info">Fiche technique</button>
             <button onclick="location.href = '../PageLocation.php';"class="btn btn-outline-warning">Demande d'emprunt</button>
           </article>
           <article>
@@ -111,7 +111,7 @@ if (!isset($_SESSION['login']))
               <!-- <p>Sed posuere consectetur est at lobortis. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis,
                 est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p> -->
               </div>
-              <button onclick="location.href = '../Fichetechnique/Fichetech-CasqueVR.php';"class="btn btn-outline-info" >Fiche technique</button>
+              <button onclick="location.href = './FicheTechnique/Fichetech-CasqueVR.php';"class="btn btn-outline-info" >Fiche technique</button>
               <button onclick="location.href = '../PageLocation.php';"class="btn btn-outline-warning">Demande d'emprunt</button>
             </article>
             <article>
@@ -122,7 +122,7 @@ if (!isset($_SESSION['login']))
                   mollis ornare vel eu leo. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p> -->
                 </div>
                 
-                <button onclick="location.href = '../Fichetechnique/Fichetech-Webcam.php';"class="btn btn-outline-info">Fiche technique</button>
+                <button onclick="location.href = './FicheTechnique/Fichetech-Webcam.php';"class="btn btn-outline-info">Fiche technique</button>
                 <button onclick="location.href = '../PageLocation.php';"class="btn btn-outline-warning">Demande d'emprunt</button>
               </article>
             </div>

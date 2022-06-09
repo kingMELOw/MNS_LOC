@@ -114,7 +114,7 @@ if (!isset($_SESSION['login']))
             </div>
             <div class="row people">
                 <div class="col-md-6 col-lg-4 item">
-                    <div class="box"><img class="rounded-circle" src="../public/image/Ecrans.jpg">
+                    <div class="box"><img class="rounded-circle" src="./css/image/Ecrans.jpg">
                         <h3 class="name">Ecrans</h3>
                         <p class="title">Matériel</p>
                         <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa. </p>
