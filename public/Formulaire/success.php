@@ -9,8 +9,8 @@
 
 <h1>Succès ! L'utilisateur a été créer avec succès.</h1>
 
-<form action="formulaire.co.php">
-    <input type="submit" value="Redirection vers l'acceuil" />
+<form action="materiel.php">
+    <input type="submit" value="Redirection vers l'accueil materiel" />
 </form>
 <form action="formu.creation.php">
     <input type="submit" value="Création d'un nouvel utilisateur" />
