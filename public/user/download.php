@@ -23,12 +23,13 @@ if (isset($_SESSION['login'])) {
                                                 <th>Nom</th>
                                                 <th>Prenom</th>
                                                 <th>Email</th>
+                                                <th>Valide</th>
 										</tr>
 									</thead>
 
 <?php 
 $filename="Users list";
-$sql = "SELECT * from Users";
+$sql = "SELECT * from login";
 $query = $dbh -> prepare($sql);
 $query->execute();
 $results=$query->fetchAll(PDO::FETCH_OBJ);
@@ -41,11 +42,14 @@ foreach($results as $result)
 echo '  
 <tr>  
 <td>'.$cnt.'</td> 
-<td>'.$Name= $result->name.'</td> 
-<td>'.$Email= $result->email.'</td> 
-<td>'.$Gender= $result->gender.'</td> 
-<td>'.$Phone= $result->mobile.'</td> 
-<td>'.$Designation= $result->designation.'</td> 					
+<td>'.$id_user= $result->id_user.'</td> 
+<td>'.$login= $result->user_login.'</td> 
+<td>'.$mdp= $result->mdp.'</td> 
+<td>'.$is_admin= $result->is_admin.'</td> 
+<td>'.$nom= $result->nom.'</td> 					
+<td>'.$prenom= $result->prenom.'</td> 					
+<td>'.$email= $result->email.'</td>
+<td>'.$status= $result->status.'</td>
 </tr>  
 ';
 header("Content-type: application/octet-stream");
