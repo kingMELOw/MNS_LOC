@@ -158,16 +158,16 @@ foreach($results as $result)
                                             
                                             <?php if($result->status == 1)
                                                     {?>
-                                                    <a href="userlist.php?confirm=<?php echo htmlentities($result->id_user);?>" onclick="return confirm('Do you really want to Un-Confirm the Account')">Validée <i class="fa fa-check-circle"></i></a> 
+                                                    <a href="userlist.php?confirm=<?php echo htmlentities($result->id_user);?>" onclick="return confirm('Voulez vous vraiment invalider cette utilisateur ?')">Validée <i class="fa fa-check-circle"></i></a> 
                                                     <?php } else {?>
-                                                    <a href="userlist.php?unconfirm=<?php echo htmlentities($result->id_user);?>" onclick="return confirm('Do you really want to Confirm the Account')">Non-validée <i class="fa fa-times-circle"></i></a>
+                                                    <a href="userlist.php?unconfirm=<?php echo htmlentities($result->id_user);?>" onclick="return confirm('Voulez vous vraiment valider cette utilisateur ?')">Non-validée <i class="fa fa-times-circle"></i></a>
                                                     <?php } ?>
 </td>
                                             </td>
 											
 <td>
-<a href="edit-user.php?edit=<?php echo $result->id_user;?>" onclick="return confirm('Do you want to Edit');">&nbsp; <i class="fa fa-pencil"></i></a>&nbsp;&nbsp;
-<a href="userlist.php?del=<?php echo $result->id_user;?>&name=<?php echo htmlentities($result->email);?>" onclick="return confirm('Do you want to Delete');"><i class="fa fa-trash" style="color:red"></i></a>&nbsp;&nbsp;
+<a href="edit-user.php?edit=<?php echo $result->id_user;?>" onclick="return confirm('Voulez vous modifier cette utilisateur ?');">&nbsp; <i class="fa fa-pencil"></i></a>&nbsp;&nbsp;
+<a href="userlist.php?del=<?php echo $result->id_user;?>&name=<?php echo htmlentities($result->email);?>" onclick="return confirm('Voulez vous supprimer cette utilisateur ?');"><i class="fa fa-trash" style="color:red"></i></a>&nbsp;&nbsp;
 </td>
 										</tr>
 										<?php $cnt=$cnt+1; }} ?>
