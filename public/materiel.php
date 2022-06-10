@@ -81,9 +81,9 @@ if (!isset($_SESSION['login']))
           <h3>Videoprojecteur</h3>
           <!-- <p>Collaboratively administrate empowered markets via plug-and-play networks.</p> -->
         </div>                
-        <button onclick="location.href = '../Fichetechnique/Fichetech-Videoprojecteur.php';"class="btn btn-outline-info">Fichetechnique</button>
-        <button onclick="location.href = '../PageLocation.php';"class="btn btn-outline-warning">Demande d'emprunt</button>
-      </article>
+        <a class="btn btn-outline-info" onclick="location.href = '../Fichetechnique/Fichetech-Videoprojecteur.php';">Fichetechnique</a>
+        <a class="btn btn-outline-warning" onclick="location.href = '../PageLocation.php';">Demande d'emprunt</a>
+        <a class="btn btn-outline-warning" onclick="location.href = '../PageRetourLocation.php';">Retour Matériel</a>      </article>
       <article>
         <img src="./css/image/Ordinateur.jpg" alt="MNS">
         <div class="texte" id="deux">
@@ -91,9 +91,9 @@ if (!isset($_SESSION['login']))
           <!-- <p>Dramatically engage seamlessly visualize quality intellectual capital without superior collaboration and
             idea-sharing.</p> -->
           </div>
-          <button onclick="location.href = '../Fichetechnique/Fichetech-Ordinateur.php';"class="btn btn-outline-info">Fiche technique</button>
-          <button onclick="location.href = '../PageLocation.php';"class="btn btn-outline-warning">Demande d'emprunt</button>
-        </article>
+          <a class="btn btn-outline-info" onclick="location.href = '../Fichetechnique/Fichetech-Ordinateur.php';">Fiche technique</a>
+          <a class="btn btn-outline-warning" onclick="location.href = '../PageLocation.php';">Demande d'emprunt</a>
+          <a class="btn btn-outline-warning" onclick="location.href = '../PageRetourLocation.php';">Retour Matériel</a>        </article>
         <article>
           <img src="./image/Ecrans.jpg" alt="MNS">
           <div class="texte" id="trois">
@@ -101,9 +101,9 @@ if (!isset($_SESSION['login']))
             <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Vivamus
               sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p> -->
             </div>
-            <button onclick="location.href = '../Fichetechnique/Fichetech-Ecrans.php';"class="btn btn-outline-info">Fiche technique</button>
-            <button onclick="location.href = '../PageLocation.php';"class="btn btn-outline-warning">Demande d'emprunt</button>
-          </article>
+            <a class="btn btn-outline-info" onclick="location.href = '../Fichetechnique/Fichetech-Ecrans.php';">Fiche technique</a>
+            <a class="btn btn-outline-warning" onclick="location.href = '../PageLocation.php';">Demande d'emprunt</a>
+            <a class="btn btn-outline-warning" onclick="location.href = '../PageRetourLocation.php';">Retour Matériel</a>          </article>
           <article>
             <img src="./css/image/CasqueVR.jpg" alt="MNS">
             <div class="texte" id="quatre">
@@ -111,8 +111,9 @@ if (!isset($_SESSION['login']))
               <!-- <p>Sed posuere consectetur est at lobortis. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis,
                 est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p> -->
               </div>
-              <button onclick="location.href = '../Fichetechnique/Fichetech-CasqueVR.php';"class="btn btn-outline-info" >Fiche technique</button>
-              <button onclick="location.href = '../PageLocation.php';"class="btn btn-outline-warning">Demande d'emprunt</button>
+              <a class="btn btn-outline-info" onclick="location.href = '../Fichetechnique/Fichetech-CasqueVR.php';">Fiche technique</a>
+              <a class="btn btn-outline-warning" onclick="location.href = '../PageLocation.php';">Demande d'emprunt</a>
+              <a class="btn btn-outline-warning" onclick="location.href = '../PageRetourLocation.php';">Retour Matériel</a>
             </article>
             <article>
               <img src="./css/image/webcam.png" alt="MNS">
@@ -122,8 +123,10 @@ if (!isset($_SESSION['login']))
                   mollis ornare vel eu leo. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p> -->
                 </div>
                 
-                <button onclick="location.href = '../Fichetechnique/Fichetech-Webcam.php';"class="btn btn-outline-info">Fiche technique</button>
-                <button onclick="location.href = '../PageLocation.php';"class="btn btn-outline-warning">Demande d'emprunt</button>
+                <a class="btn btn-outline-info" onclick="location.href = '../Fichetechnique/Fichetech-Webcam.php';">Fiche technique</a>
+                <a class="btn btn-outline-warning" onclick="location.href = '../PageLocation.php';">Demande d'emprunt</a>
+                <a class="btn btn-outline-warning" onclick="location.href = '../PageRetourLocation.php';">Retour Matériel</a>                
+               
               </article>
             </div>
             <p id="text">Par JEAN Maxime, SCARON Félix et VILLENEUVE Alexis</p>
