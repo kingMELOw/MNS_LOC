@@ -113,9 +113,11 @@ if (!isset($_SESSION['login']))
                             </div>
                         </div>
                         <div class="form-check">
-                            <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Bon état
-                            <label class="form-check-label" for="radio1"></label>
-                            </div>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">
+                                Bon état
+                            </label>
+                        </div>
                            
 
       
@@ -123,7 +125,7 @@ if (!isset($_SESSION['login']))
                         <div class="d-flex flex-row align-items-center mb-4">
                           <i class="fas fa-phone fa-lg me-3 fa-fw"></i>
                           <div class="form-outline flex-fill mb-0">
-                            <label class="form-label" for="form3Example5c">Signaler un soucis</label>
+                            <label class="form-label" for="form3Example5c">Signaler un soucis... </label>
                             <textarea id="t3" name="msg" maxlength="80" rows="3"></textarea>
       
                        
@@ -133,9 +135,9 @@ if (!isset($_SESSION['login']))
       
                         <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
                         <a href="./materiel.php">
-                          <button type="button" class="btn btn-warning btn-lg">Retour</button>
+                          <button type="button" class="btn btn-warning btn-lg">Retour </button>
                         </a>
-                          <button type="button" class="btn btn-primary btn-lg">Valider</button>
+                          <button type="button" class="btn btn-primary btn-lg">Valider </button>
 
                         </div>
 
