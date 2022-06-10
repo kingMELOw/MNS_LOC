@@ -122,7 +122,7 @@ if (!isset($_SESSION['login']))
 
       
                         
-                        <div class="d-flex flex-row align-items-center mb-4">
+                        <div class="d-flex flex-row align-items-center mb-3">
                           <i class="fas fa-phone fa-lg me-3 fa-fw"></i>
                           <div class="form-outline flex-fill mb-0">
                             <label class="form-label" for="form3Example5c">Signaler un soucis... </label>
@@ -146,7 +146,7 @@ if (!isset($_SESSION['login']))
       
                     </div>
                     <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
-                    <img src="./css/image/Location-de-matériel-informatique.png" alt="..." class="img-fluid mx-auto d-block" />
+                    <img src="../image/Location-de-matériel-informatique.png" alt="" class="img-fluid mx-auto d-block" />
                         
                     </div>
                   </div>
