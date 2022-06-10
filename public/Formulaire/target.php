@@ -33,7 +33,7 @@ if (isset($_POST)) {
     // $pdo = new PDO('mysql:host=localhost;dbname=LOC_MNS', 'admin', 'dev1');  // Connexion à la base de données du serveur
     // $pdo = new PDO('mysql:host=localhost;dbname=mns_loc','root',''); // Connexion à la base de données de la branch test
 
-    // Récupération de l'utilisateur depuis la base de données à partir de son email
+    // Récupération de l'utilisateur depuis la base de données à partir de son login
     $sql = "SELECT * FROM login WHERE user_login ='$login' ";
     $req = $pdo->prepare($sql);
     $req->execute();
@@ -72,7 +72,6 @@ if (isset($_POST)) {
     if ($req->rowCount() > 0) {
         $data = $req->fetchAll();
         if (password_verify($mdp, $data[0]['mdp'])) {
-            $name = $data[0]['prenom'];
             $_SESSION['login'] = $login;
             if ($data[0]['is_admin'] == 1) {
                 $_SESSION['admin'] = true;

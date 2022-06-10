@@ -47,16 +47,19 @@ if (!isset($_SESSION['login']))
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link" href="./index.html">Accueil</a>
-          </li>     
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="./Contact.html">Contact</a>
-          </li>       
+          </li>
+        <li class="nav-item">
+            <a class="nav-link" href= "./Formulaire/logout.php">Déconnexion</a>
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="./Formulaire/formu.creation.php">Création (temporaire)</a>
           </li>
-          <li class="nav-item justify-content-end">
-            <a class="nav-link " href= "./Formulaire/logout.php">Déconnexion</a>
-          </li> 
+          <li class="nav-item">
+            <a class="nav-link" href="./user/dashboard.php">Gérer Utilisateurs (temporaire)</a>
+          </li>
      
         </div>
       </div>
@@ -95,7 +98,7 @@ if (!isset($_SESSION['login']))
           <a class="btn btn-outline-warning" onclick="location.href = '../PageLocation.php';">Demande d'emprunt</a>
           <a class="btn btn-outline-warning" onclick="location.href = '../PageRetourLocation.php';">Retour Matériel</a>        </article>
         <article>
-          <img src="./image/Ecrans.jpg" alt="MNS">
+          <img src="./css/image/Ecrans.jpg" alt="MNS">
           <div class="texte" id="trois">
             <h3>Ecrans</h3>
             <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Vivamus
