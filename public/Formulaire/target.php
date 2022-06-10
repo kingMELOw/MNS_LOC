@@ -37,7 +37,7 @@ if (isset($_POST)) {
 
     if ($req->rowCount() > 0) {
         $data = $req->fetchAll();
-        if ($data[0]['status'] == '0') {
+        if ($data[0]['status'] != '1') {
             header('Location: error.php');
         }
         else {

@@ -4,7 +4,7 @@
 		<ul class="ts-profile-nav">
 			
 			<li class="ts-account">
-				<a href="#"><img src="img/ts-avatar.jpg" class="ts-avatar hidden-side" alt=""> Compte <i class="fa fa-angle-down hidden-side"></i></a>
+				<a href="#"><img src="img/ts-avatar.jpg" class="ts-avatar hidden-side" alt=""> Redirection <i class="fa fa-angle-down hidden-side"></i></a>
 				<ul>
 					<li><a href="../../materiel.php">Accueil materiel</a></li>
 					<li><a href="logout.php">Deconnexion</a></li>
