@@ -34,10 +34,10 @@ if (isset($_POST)) {
         // 4. Préparation de la requête d'insertion
     
         if (isset($_POST['login'], $_POST['mdp'], $_POST['surname'], $_POST['name'], $_POST['email'],)) {
-            $sql = "INSERT INTO login (user_login, mdp, is_admin, nom, prenom, email, status) VALUES ('$login', '$pass', '$isAdmin', '$surname', '$name', '$email', '1')";
+            $sql = "INSERT INTO login (user_login, mdp, is_admin, nom, prenom, email, status) VALUES ('$login', '$pass', '$isAdmin', '$surname', '$name', '$email', '0')";
             $req = $pdo->prepare($sql);
             $req->execute();
-            header('Location: success.php');
+            header('Location: success2.php');
         } else {
             header('Location: error2.php');
         }
